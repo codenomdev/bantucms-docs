@@ -27,27 +27,27 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "1.x/installation-guide/index.html",
-    "revision": "cf89ec04e8c817fc7ccb3d44bd6280dd"
+    "revision": "e27da58d9d48ee391d207bf414431b8b"
   },
   {
     "url": "1.x/installation-guide/installation.html",
-    "revision": "e13ef648e7b3e66184e787cd2f4a7085"
+    "revision": "162a7746aa633ad406d793143812803c"
   },
   {
     "url": "1.x/installation-guide/overview.html",
-    "revision": "6ba585b1fa7e503a67eedc0a8343effd"
+    "revision": "3536e1da07c2265c63db5152d94b46e1"
   },
   {
     "url": "1.x/installation-guide/requirements.html",
-    "revision": "396688006ff160c1bf50abfe12f0885c"
+    "revision": "961cb31f753e3495ea0ccf86f5abaf1b"
   },
   {
     "url": "1.x/modules/index.html",
-    "revision": "8b5ee4fe7697d5bb35f340234abec59d"
+    "revision": "6ad84649ab84e76bcbbf6cce38ebe956"
   },
   {
     "url": "404.html",
-    "revision": "1fef317513adcfc2fbb4973cf44de6c7"
+    "revision": "0d0dd85c699ea703ff14df45931c3690"
   },
   {
     "url": "assets/css/0.styles.a668a6b8.css",
@@ -98,12 +98,12 @@ self.__precacheManifest = [
     "revision": "2d2d3f2fbe90cb6a694768a8df20c144"
   },
   {
-    "url": "assets/js/app.4942aa50.js",
-    "revision": "854973876ca1afc9d731f785df811a20"
+    "url": "assets/js/app.0e1eb08c.js",
+    "revision": "8cf49ff3fdec517199d76291a2019869"
   },
   {
     "url": "index.html",
-    "revision": "df81d6567fc8c7564449f4a26e47f5e8"
+    "revision": "db90c09b5dba96f03bc47eb024b92ec0"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
