@@ -5,20 +5,20 @@ module.exports = {
     title: 'Bantucms Documentation',
     description: 'Bantucms Developer',
     head: [
-        ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
+        // ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
     ],
     themeConfig: {
         smoothScroll: true,
         lastUpdated: 'Last Updated',
-        repo: 'bantucms/bantucms',
+        repo: 'codenomdev/bantucms-docs',
         repoLabel: 'Contribute to Bantucms',
-        docsRepo: 'codenomdev/codenom-docs',
+        docsRepo: 'codenomdev/bantucms-docs',
         docsDir: 'docs',
         docsBranch: 'master',
         editLinks: true,
         editLinkText: 'Help us improve this page on Github.',
 
-        logo: '/logo.png',
+        // logo: '/logo.png',
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Extensions', link: 'https://bantucms.com/en/extensions/' },
