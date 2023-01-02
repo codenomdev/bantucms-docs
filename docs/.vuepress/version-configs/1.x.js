@@ -20,7 +20,7 @@ module.exports = [
         collapsable: true,
         children: setVersionPrefix([
             ['installation-guide/overview', 'Overview'],
-            ['installation-guide/requirements', 'Requirements'],
+            ['installation-guide/requirements', 'System Requirements'],
             ['installation-guide/installation', 'Installation']
         ]),
     }
