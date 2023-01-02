@@ -4,9 +4,9 @@ Before you install Codenom Project or Bantucms Open Source, you must do the foll
  - If you are setting up more than one web node with load balancing, set up and test that part of your system before you install the application.
  - Make sure you can back up your entire system at various points during the installation so that you can roll it back if the are issues.
 
- ::: tip
-    We assume you are installing the Codenom Project or Bantucms Open Source in a development environment, that you have root user access to the machine, and that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
- :::
+::: tip
+We assume you are installing the Codenom Project or Bantucms Open Source in a development environment, that you have root user access to the machine, and that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
+:::
 
 We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page](../installation-guide/overview.html)
 
@@ -33,6 +33,7 @@ To check your system for prerequisites enter the following commands:
 ### Apache
  - CentOS: httpd-v
  - Ubuntu: apache2 -v
+
 Codenom Project and Bantucms Open Source support Apache version 2.4 as the following result indicates:
 
 ~~~ini
@@ -69,8 +70,7 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ~~~
 
-Type help or \h for help. Type \c to clear the current input statement.
-Enter exit at the mysql> prompt to exit.
+Type help or \h for help.<br/>Type \c to clear the current input statement.<br/>Enter exit at the mysql> prompt to exit.
 
 To install or upgrade MySQL, see [MySQL](https://dev.mysql.com/doc/).
 
@@ -78,7 +78,7 @@ To install or upgrade MySQL, see [MySQL](https://dev.mysql.com/doc/).
 1. [Download Bantucms](https://bantucms.com/download/).
 2. Extract the contents of the zip file.
 3. Point your HTTP server to the public/ directory of the project and open it on your browser.<br/>For example: `https://example.com/`.
-4.This will detect Bantucms adn start the installer.
+4. This will detect Bantucms adn start the installer.
 
 ::: warning
 We do not recommend installing this manually.
@@ -158,3 +158,7 @@ Go to `https://example.com/admin_panel/`, in case `php artisan bantucms:install`
 email: admin@example.com
 password: admin123
 ```
+
+::: tip
+Congratulations! You’ve completed the quick install. Need more advanced help? Check out our [Advanced Development](../advance-development) guide.
+:::
