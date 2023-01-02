@@ -1,4 +1,4 @@
-# Requirements
+# System Requirements
 Before installing Bantucms, make sure the server meets the following requirements:
 
 ## Server configuration
