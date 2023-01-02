@@ -1,0 +1,28 @@
+{
+  "name": "bantucms-doc",
+  "version": "1.0.0",
+  "description": "Bantucms Developer Documentation",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:eject": "vuepress eject docs"
+  },
+  "keywords": [
+    "bantucms",
+    "developer",
+    "documentation"
+  ],
+  "author": "codenomdev@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.5",
+    "@vuepress/plugin-pwa": "^1.9.5",
+    "vuepress": "^1.9.5",
+    "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-copy-code": "0.0.1"
+  },
+  "dependencies": {
+    "vuepress-bar": "^0.4.4"
+  }
+}
