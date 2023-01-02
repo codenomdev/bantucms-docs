@@ -3,7 +3,7 @@ home: true,
 heroText: Bantucms Developer
 tagline: Find detailed documentation and code examples.
 actionText: Get Started →
-actionLink: /1.x/introduction/
+actionLink: /1.x/installation-guide/
 features:
 - title: Package creation
   details: Learn how to create a new package for Bantucms.
