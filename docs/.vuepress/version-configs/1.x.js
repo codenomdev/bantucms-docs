@@ -21,7 +21,8 @@ module.exports = [
         children: setVersionPrefix([
             ['installation-guide/overview', 'Overview'],
             ['installation-guide/requirements', 'System Requirements'],
-            ['installation-guide/installation', 'Installation']
+            ['installation-guide/installation', 'Installation'],
+            ['installation-guide/docker', 'Docker Installation'],
         ]),
     }
 ];
