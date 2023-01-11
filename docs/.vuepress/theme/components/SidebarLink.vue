@@ -130,4 +130,14 @@ a.sidebar-link
     border-left none
     &.active
       font-weight 500
+.sidebar-group
+  a.sidebar-link
+    &.active
+      background-color: #fafafa
+
+ul.sidebar-sub-headers
+  li.sidebar-sub-header
+    a.sidebar-link
+      &.active
+        background-color: #fafafa
 </style>
