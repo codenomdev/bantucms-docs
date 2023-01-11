@@ -46,6 +46,15 @@
       >
         <h2>{{ feature.title }}</h2>
         <p>{{ feature.details }}</p>
+        <div v-if="feature.shortcuts && feature.shortcuts.length" class="shortcuts">
+          <ul>
+            <li v-for="(shortcut, id) in feature.shortcuts" v-bind:key="id">
+              <a :href="shortcut.link">
+                {{ shortcut.title }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -138,6 +147,25 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
+    .shortcuts{
+      ul{
+        margin: 0 0 0.7em 0;
+      }
+      ul, li{
+        list-style: none;
+        padding: 0;
+      }
+      li{
+        margin: 0 0 0.3em 0;
+      }
+      li a{
+        font-size: 0.95rem;
+        text-decoration: none;
+      }
+      li a:hover{
+        text-decoration: underline;
+      }
+    }
   .footer
     padding 2.5rem
     border-top 1px solid $borderColor

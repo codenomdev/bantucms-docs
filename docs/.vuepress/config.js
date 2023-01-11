@@ -24,9 +24,7 @@ module.exports = {
             { text: 'Extensions', link: 'https://bantucms.com/en/extensions/' },
             { text: 'Community Forum', link: 'https://forums.codenom.com/' }
         ],
-        sidebar: {
-            '/1.x/': require('./version-configs/1.x')
-        }
+        sidebar: require('./version-configs/1.x')
     },
     markdown: {
         lineNumbers: false
