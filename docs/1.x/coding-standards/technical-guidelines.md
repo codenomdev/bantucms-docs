@@ -77,4 +77,4 @@ Use [RFC2119](https://www.rfc-editor.org/rfc/rfc2119) to interpret keywords like
 Cron job SHOULD be an [idempotent method](https://tools.ietf.org/html/rfc7231#section-4.2.2).
 
 ## Services
-New features with limited customization scenarios SHOULD be implemented as a thin extension that will communicate to a service that contains business logic. This allows developers to release features independently of Magento and makes feature upgrades easier.
+New features with limited customization scenarios SHOULD be implemented as a thin extension that will communicate to a service that contains business logic. This allows developers to release features independently of Bantucms and makes feature upgrades easier.
