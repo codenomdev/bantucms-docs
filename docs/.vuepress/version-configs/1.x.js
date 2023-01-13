@@ -30,6 +30,23 @@ module.exports = {
         '',
         ['/1.x/coding-standards/php.md', 'PHP coding standards'],
         ['/1.x/coding-standards/technical-guidelines.md', 'Technical Guidelines'],
+    ],
+    '/1.x/modules/': [
+        ['', 'Introduction'],
+        {
+            title: 'Module Development',
+            children: [
+                [
+                    '/1.x/modules/developments/creating-a-module.md', 'Create a Module'
+                ],
+                [
+                    '/1.x/modules/developments/create-migrations.md', 'Create Migrations'
+                ],
+                [
+                    '/1.x/modules/developments/create-a-config.md', 'Create a Config'
+                ],
+            ]
+        }
     ]
     // {
     //     title: 'Installation Guide',
