@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Store Data Through Repository | Bantucms Documentation</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Bantucms Developer">
+    
+    <link rel="preload" href="/assets/css/0.styles.818b1d95.css" as="style"><link rel="preload" href="/assets/js/app.7a9d917f.js" as="script"><link rel="preload" href="/assets/js/2.b2a3a940.js" as="script"><link rel="preload" href="/assets/js/20.acbd9930.js" as="script"><link rel="prefetch" href="/assets/js/10.6c88f33f.js"><link rel="prefetch" href="/assets/js/11.9e1a4094.js"><link rel="prefetch" href="/assets/js/12.55a5069c.js"><link rel="prefetch" href="/assets/js/13.a8fc562b.js"><link rel="prefetch" href="/assets/js/14.3b74364e.js"><link rel="prefetch" href="/assets/js/15.6ecf4c6b.js"><link rel="prefetch" href="/assets/js/16.5b356b02.js"><link rel="prefetch" href="/assets/js/17.250f7038.js"><link rel="prefetch" href="/assets/js/18.7256384d.js"><link rel="prefetch" href="/assets/js/19.10d68bf4.js"><link rel="prefetch" href="/assets/js/21.2855fd68.js"><link rel="prefetch" href="/assets/js/22.3d937c06.js"><link rel="prefetch" href="/assets/js/3.1cde5f36.js"><link rel="prefetch" href="/assets/js/4.fb841923.js"><link rel="prefetch" href="/assets/js/5.f04f24d4.js"><link rel="prefetch" href="/assets/js/6.b197ae70.js"><link rel="prefetch" href="/assets/js/7.5a18e449.js"><link rel="prefetch" href="/assets/js/8.e4d55808.js"><link rel="prefetch" href="/assets/js/9.531a2ce1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.818b1d95.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Bantucms Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://bantucms.com/en/extensions/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Extensions
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://forums.codenom.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Community Forum
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/codenomdev/bantucms-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute to Bantucms
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://bantucms.com/en/extensions/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Extensions
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://forums.codenom.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Community Forum
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/codenomdev/bantucms-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute to Bantucms
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/1.x/modules/" aria-current="page" class="sidebar-link">Introduction</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Module Development</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/1.x/modules/developments/creating-a-module.html" class="sidebar-link">Create Module</a></li><li><a href="/1.x/modules/developments/create-a-config.html" class="sidebar-link">Create Config</a></li><li><a href="/1.x/modules/developments/create-models.html" class="sidebar-link">Create Models</a></li><li><a href="/1.x/modules/developments/store-data-through-repositories.html" aria-current="page" class="active sidebar-link">Store Data Repositories</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/1.x/modules/developments/store-data-through-repositories.html#contract" class="sidebar-link">Contract</a></li><li class="sidebar-sub-header"><a href="/1.x/modules/developments/store-data-through-repositories.html#repositories" class="sidebar-link">Repositories</a></li><li class="sidebar-sub-header"><a href="/1.x/modules/developments/store-data-through-repositories.html#binding-interfaces-to-implementations" class="sidebar-link">Binding Interfaces To Implementations</a></li></ul></li><li><a href="/1.x/modules/developments/create-migrations.html" class="sidebar-link">Create Migrations</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="store-data-through-repository"><a href="#store-data-through-repository" class="header-anchor">#</a> Store Data Through Repository</h1> <p></p><div class="table-of-contents"><ul><li><a href="#contract">Contract</a><ul><li><a href="#create-contract">Create Contract</a></li></ul></li><li><a href="#repositories">Repositories</a><ul><li><a href="#create-repositories">Create Repositories</a></li></ul></li><li><a href="#binding-interfaces-to-implementations">Binding Interfaces To Implementations</a><ul><li><a href="#register-binding">Register Binding</a></li></ul></li></ul></div><p></p> <h2 id="contract"><a href="#contract" class="header-anchor">#</a> Contract</h2> <p>Laravel's Contracts are a set of interfaces that define the core services provided by the framework. For example, an <code>Illuminate\Contracts\Queue\Queue</code> contract defines the methods needed for queueing jobs, while the <code>Illuminate\Contracts\Mail\Mailer</code> contract defines the methods needed for sending an e-mail.</p> <p>Each contract has a corresponding implementation provided by the framework. For example, Laravel provides a queue implementation with a variety of drivers, and a mailer implementation that is powered by SwiftMailer.</p> <p>All of the Laravel contracts live in their own GitHub repository. This provides a quick reference point for all available contracts, as well as a single, decoupled package that may be utilized by package developers.</p> <h3 id="create-contract"><a href="#create-contract" class="header-anchor">#</a> Create Contract</h3> <ul><li>You have to understand the <a href="/1.x/modules/#directory-structure">folder structure in the module</a></li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>If you do not find the <code>Contracts</code> folder in the root of your module, you can create a <code>Contracts</code> folder first</p></div> <p>The <code>Contracts</code> folder structure in your module:</p> <div class="language-directory-structure extra-class"><pre class="language-text"><code>- modules/
+    - ACME/HelloWorld/
+        ...
+        - Contracts/
+        ...
+</code></pre></div><ul><li>Now, create an interface file named as <code>HelloWorld.php</code></li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">ACME<span class="token punctuation">\</span>HelloWorld<span class="token punctuation">\</span>Contracts</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name-definition class-name">HelloWorld</span>
+<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The contract file allows you to modify file names like: <code>HelloWorld.php</code>, <code>HelloWorldInterface.php</code>, and <code>HelloWorldContract.php</code></p></div> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><strong>DO NOT</strong> use the file names <code>HelloWorldModel.php</code>, and <code>HelloWorldRepository.php</code>. The file name will be the same as the Model and Repository name. See the topic <a href="/1.x/coding-standards/php.html">Naming Conventions for details</a>.</p></div> <h2 id="repositories"><a href="#repositories" class="header-anchor">#</a> Repositories</h2> <p>Generally, we wrote all of our application logic in the controller. There’s an alternative approach of development that abstracts some calls into PHP classes called Repositories. The idea is that we can decouple models from controllers and assign a readable name's to complicated queries.</p> <p>This file defines our Repository class. Instances of this class have a model property that we tie to an Eloquent model. Once this is bound in the constructor we can call Eloquent methods like findOrFail, update or all from the class methods.</p> <h3 id="create-repositories"><a href="#create-repositories" class="header-anchor">#</a> Create Repositories</h3> <ul><li>You have to understand the <a href="/1.x/modules/#directory-structure">folder structure in the module</a></li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>If you do not find the <code>Repository</code> folder in the root of your module, you can create a <code>Repository</code> folder first</p></div> <p>The <code>Repository</code> folder structure in your module:</p> <div class="language-directory-structure extra-class"><pre class="language-text"><code>- modules/
+    - ACME/HelloWorld/
+        ...
+        - Repository/
+        ...
+</code></pre></div><ul><li>Now, create a file <code>HelloWorldRepository.php</code> and create the <code>model()</code> method in repository class which returns the path of your contract class:</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">ACME<span class="token punctuation">\</span>HelloWorld<span class="token punctuation">\</span>Repositories</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Bantucms<span class="token punctuation">\</span>Framework<span class="token punctuation">\</span>App<span class="token punctuation">\</span>Eloquent<span class="token punctuation">\</span>AbstractRepository</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">HelloWorldRepository</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractRepository</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+    * Specify Model class name
+    *
+    * @return mixed
+    */</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">model</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string single-quoted-string">'ACME/HelloWorld/Contracts/HelloWorld'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p><strong>DO NOT</strong> use the file names <code>HelloWorldModel.php</code>, and <code>HelloWorldContract.php</code>. The file name will be the same as the Model and Contract name. See the topic <a href="/1.x/coding-standards/php.html">Naming Conventions for details</a>.</p></div> <h2 id="binding-interfaces-to-implementations"><a href="#binding-interfaces-to-implementations" class="header-anchor">#</a> Binding Interfaces To Implementations</h2> <p>A very powerful feature of the service container is its ability to bind an interface to a given implementation. <a href="https://laravel.com/docs/8.x/container#binding-interfaces-to-implementations" target="_blank" rel="noopener noreferrer">More information about bindings, see the official information<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h3 id="register-binding"><a href="#register-binding" class="header-anchor">#</a> Register Binding</h3> <p>After creating all the files stated above, we have to modified a provider as <code>HelloWorldServiceProvider.php</code>. In this file, models which are used in this package are registered. You may check below code:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">ACME<span class="token punctuation">\</span>HelloWorld<span class="token punctuation">\</span>Providers</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>ServiceProvider</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">ACME<span class="token punctuation">\</span>HelloWorld<span class="token punctuation">\</span>Contracts<span class="token punctuation">\</span>HelloWorld</span> <span class="token keyword">as</span> HelloWorldContract<span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">ACME<span class="token punctuation">\</span>HelloWorld<span class="token punctuation">\</span>Models<span class="token punctuation">\</span>HelloWorldModel</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+* HelloWorldServiceProvider
+*
+* @copyright 2020 Codenom Dev. (http://www.codenom.com)
+*/</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">HelloWorldServiceProvider</span> <span class="token keyword">extends</span> <span class="token class-name">ServiceProvider</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * @var string $moduleName
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$moduleName</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'ACME_HelloWorld'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * @var string $moduleNameLower
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$moduleNameLower</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'acme_helloworld'</span><span class="token punctuation">;</span>
+
+    <span class="token operator">...</span>
+
+    <span class="token comment">/**
+    * Register services.
+    *
+    * @return void
+    */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">register</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">app</span><span class="token operator">-&gt;</span><span class="token function">bind</span><span class="token punctuation">(</span>
+            <span class="token class-name static-context">HelloWorldContract</span><span class="token operator">::</span><span class="token constant">clas</span><span class="token punctuation">,</span>
+            <span class="token class-name static-context">HelloWorldModel</span><span class="token operator">::</span><span class="token keyword">class</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/codenomdev/bantucms-docs/edit/master/docs/1.x/modules/developments/store-data-through-repositories.md" target="_blank" rel="noopener noreferrer">Help us improve this page on Github.</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/14/2023, 11:49:26 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/1.x/modules/developments/create-models.html" class="prev">
+        Create Models
+      </a></span> <span class="next"><a href="/1.x/modules/developments/create-migrations.html">
+        Create Migrations
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.7a9d917f.js" defer></script><script src="/assets/js/2.b2a3a940.js" defer></script><script src="/assets/js/20.acbd9930.js" defer></script>
+  </body>
+</html>
