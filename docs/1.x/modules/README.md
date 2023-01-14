@@ -18,7 +18,6 @@ In Bantucms, we have created plenty of packages at path `modules/<VendorName>/<M
         - Migrations/
         - Seeders/
     - Events/
-    - Entities/
     - Http/
         - Controllers/
             - Adminhtml/
@@ -26,6 +25,7 @@ In Bantucms, we have created plenty of packages at path `modules/<VendorName>/<M
             - IndexController.php
         - Middleware/
         - Requests/     
+    - Models/
     - Providers/
         - RouteServiceProvider.php
         - ModuleNameServiceProvider.php

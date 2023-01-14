@@ -55,6 +55,7 @@ If somehow the file already exists then you can use `--force` to overwrite the f
 - Copy the below code and paste it in `HelloWorldServiceProvider.php`:
 ```php
 <?php
+
 namespace ACME\HelloWorld\Providers;
 
 use Illuminate\Support\ServiceProvider;

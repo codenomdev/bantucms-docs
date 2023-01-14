@@ -37,13 +37,19 @@ module.exports = {
             title: 'Module Development',
             children: [
                 [
-                    '/1.x/modules/developments/creating-a-module.md', 'Create a Module'
+                    '/1.x/modules/developments/creating-a-module.md', 'Create Module'
+                ],
+                [
+                    '/1.x/modules/developments/create-a-config.md', 'Create Config'
+                ],
+                [
+                    '/1.x/modules/developments/create-models.md', 'Create Models'
+                ],
+                [
+                    '/1.x/modules/developments/store-data-through-repositories.md', 'Store Data Repositories'
                 ],
                 [
                     '/1.x/modules/developments/create-migrations.md', 'Create Migrations'
-                ],
-                [
-                    '/1.x/modules/developments/create-a-config.md', 'Create a Config'
                 ],
             ]
         }
