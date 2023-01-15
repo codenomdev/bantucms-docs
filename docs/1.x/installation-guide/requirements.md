@@ -9,17 +9,30 @@ Before installing Bantucms, make sure the server meets the following requirement
 - **PHP**: 7.4 or higher
 - **Composer**: 1.6.5 or higher
 
+::: tip
+If you use Nginx, you can see the [Nginx configuration in more details](../installation-guide/server-configuration.md#nginx).
+:::
+
 ## PHP Extensions
 
 Make sure the following extensions are installed and enabled. You can check using the `phpinfo()` page or the `php -m` command.
 
+- PHP >= 7.3
+- BCMath PHP Extension
+- Ctype PHP Extension
+- Fileinfo PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 - php-intl extension
-
 - php-gd extension
 
-  ::: tip
-    You must install the `php-gd` extension properly otherwise, the image does not work properly in the project.
-  :::
+::: tip
+  You must install the `php-gd` extension properly otherwise, the image does not work properly in the project.
+:::
 
 ## PHP Configuration
 

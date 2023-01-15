@@ -69,7 +69,7 @@ Use [RFC2119](https://www.rfc-editor.org/rfc/rfc2119) to interpret keywords like
 - `eval()`, `passthru()`, `system()`, `shell_exec()`, `serialize()`, `unserialize()`, `md5()`, `srand()`, `mt_srand()` SHOULD NOT be used.
 - User-submitted values SHOULD NOT be passed directly to `include*()`, `require*()`, `create_function()`, `fopen()`, `preg_replace()`.
 - Variable functions SHOULD NOT be used if the variable values are submitted by the user.
-- Security capabilities SHOULD be implemented either on the Magento Framework level or in a dedicated module(s) and utilized by the entire application in a centralize manner.
+- Security capabilities SHOULD be implemented either on the Bantucms Open Source level or in a dedicated module(s) and utilized by the entire application in a centralize manner.
 - Files MUST be secured by a web server configuration (e.g., `.htaccess` or `nginx.conf`), except files that are intended to be publicly accessible.
 - Presentation layer classes that access user input directly MUST NOT assume it has been validated.
 
