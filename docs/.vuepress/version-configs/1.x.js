@@ -22,7 +22,8 @@ module.exports = {
                 ['/1.x/installation-guide/overview.md', 'Overview'],
                 ['/1.x/installation-guide/requirements.md', 'System Requirements'],
                 ['/1.x/installation-guide/installation.md', 'Installation'],
-                ['/1.x/installation-guide/docker.md', 'Docker']
+                ['/1.x/installation-guide/docker.md', 'Docker Installation'],
+                ['/1.x/installation-guide/server-configuration.md', 'Server Configuration']
             ]
         },
     ],
