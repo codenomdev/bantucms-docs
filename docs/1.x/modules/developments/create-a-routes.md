@@ -172,11 +172,11 @@ Nested groups attempt to intelligently "merge" attributes with their parent grou
   To assign middleware to all routes within a group, you may use the middleware method before defining the group. Middleware are executed in the order they are listed in the array:
 ```php
 $router->middleware(['first', 'second'])->group(function ($router) {
-    $router->get('/', function () {
+    $router->get('/', function ($router) {
         // Uses first & second middleware...
     });
  
-    $router->get('/user/profile', function () {
+    $router->get('/user/profile', function ($router) {
         // Uses first & second middleware...
     });
 });
@@ -195,7 +195,7 @@ $router->controller(OrderController::class)->group(function ($router) {
   The prefix method may be used to prefix each route in the group with a given URI. For example, you may want to prefix all route URIs within the group with `hello_world`:
 ```php
 $router->prefix('hello_world')->group(function ($router) {
-    $router->get('/users', function () {
+    $router->get('/users', function ($router) {
         // Matches The "/hello_world/users" URL
     });
 });
@@ -204,7 +204,7 @@ $router->prefix('hello_world')->group(function ($router) {
   The name method may be used to prefix each route name in the group with a given string. For example, you may want to prefix all of the grouped route's names with admin. The given string is prefixed to the route name exactly as it is specified, so we will be sure to provide the trailing . character in the prefix:
 ```php
 $router->name('hello_world.')->group(function ($router) {
-    $router->get('/users', function () {
+    $router->get('/users', function ($router) {
         // Route assigned name "hello_world.users"...
     })->name('users');
 });
