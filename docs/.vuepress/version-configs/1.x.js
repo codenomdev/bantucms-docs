@@ -52,6 +52,9 @@ module.exports = {
                 [
                     '/1.x/modules/developments/create-migrations.md', 'Create Migrations'
                 ],
+                [
+                    '/1.x/modules/developments/create-a-routes.md', 'Create Routes'
+                ],
             ]
         }
     ]
