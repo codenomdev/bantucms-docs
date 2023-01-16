@@ -27,75 +27,75 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "1.x/coding-standards/index.html",
-    "revision": "7f0bed5a7da78a412cc9e0175271ea33"
+    "revision": "cd6e5005f4b58bbd8ec44f0f2b91d4f1"
   },
   {
     "url": "1.x/coding-standards/php.html",
-    "revision": "e6542999e5f862c5ade6987e20a345dc"
+    "revision": "30a498c71dd072eb29ddc228e07530be"
   },
   {
     "url": "1.x/coding-standards/technical-guidelines.html",
-    "revision": "9190b182fccd6c77478f4e3ab2bbc4ad"
+    "revision": "0ef1ec14638e8b05b56c725566165464"
   },
   {
     "url": "1.x/development/security/cross-site-scripting.html",
-    "revision": "10b48bd3515b5010757c94b37412a208"
+    "revision": "99ca8812f58e8ad99469736904e99849"
   },
   {
     "url": "1.x/installation-guide/docker.html",
-    "revision": "b69b29d97c377b8507f3fb88db486ef4"
+    "revision": "46cf77c7cad0435ec8be775b13bdc3b1"
   },
   {
     "url": "1.x/installation-guide/index.html",
-    "revision": "fafc2a59a491435d8c2c93fc6d019f12"
+    "revision": "5f490d2a24693a4087d2b3aa4f2cfa89"
   },
   {
     "url": "1.x/installation-guide/installation.html",
-    "revision": "d9e28de55264bddbf145a5bd5da5430d"
+    "revision": "9740a0b59cdfde39d6ca547259661459"
   },
   {
     "url": "1.x/installation-guide/overview.html",
-    "revision": "05570fd3e533e913405efddd1974d8fa"
+    "revision": "1fde86f40f8aa53080c06e62e6d4dff8"
   },
   {
     "url": "1.x/installation-guide/requirements.html",
-    "revision": "ab61bce214903419961d3805e07f023c"
+    "revision": "d706e32ee73bccd70aa5cd0f75768ca3"
   },
   {
     "url": "1.x/installation-guide/server-configuration.html",
-    "revision": "c539ffbe3ead852f5c54e18eb4a8cfd6"
+    "revision": "71029f9e76e6f7ba19046ca2d5534662"
   },
   {
     "url": "1.x/modules/developments/create-a-config.html",
-    "revision": "a90f791a82d2d3d4cdf6cc3d5183e083"
+    "revision": "e27aa5c817b34307695870b45d09018b"
   },
   {
     "url": "1.x/modules/developments/create-a-routes.html",
-    "revision": "876ceae13bbe7e28c063d2a5ce8d2c13"
+    "revision": "993f6857700fa5393e160ca92fc1cc35"
   },
   {
     "url": "1.x/modules/developments/create-migrations.html",
-    "revision": "9cc945b2d8f818a5f9a4bb4959d44617"
+    "revision": "0d115efea362b67e4310ef9d702e23ba"
   },
   {
     "url": "1.x/modules/developments/create-models.html",
-    "revision": "2854d331a61ab770d8606300a3b24a90"
+    "revision": "5474b6fc5d130e16dce66ec7057432f4"
   },
   {
     "url": "1.x/modules/developments/creating-a-module.html",
-    "revision": "941a9ec7e830c37dfc7a589c43dcc4c6"
+    "revision": "7bdc8996e5ab6434050a2418575a6889"
   },
   {
     "url": "1.x/modules/developments/store-data-through-repositories.html",
-    "revision": "9c2f5da0c6cc283042e6f33bb30927ea"
+    "revision": "a7f2e7fdf6f67c3371450565b8bcd334"
   },
   {
     "url": "1.x/modules/index.html",
-    "revision": "988d42153194ac0b1462f9807d92edca"
+    "revision": "6e4379cf05d2b8cf1b952cc7dd15317b"
   },
   {
     "url": "404.html",
-    "revision": "b20be3dafb1e2233dfcc97d82702cbcd"
+    "revision": "0562d0bec53ffe0fb2a65a23822a7a83"
   },
   {
     "url": "assets/css/0.styles.818b1d95.css",
@@ -134,8 +134,8 @@ self.__precacheManifest = [
     "revision": "29bc84d79e87a089aa1494a7cb43cf48"
   },
   {
-    "url": "assets/js/17.9e91eb09.js",
-    "revision": "50dbb998fb65716bc55ca90959377e8a"
+    "url": "assets/js/17.efeb96c2.js",
+    "revision": "af0ca2103777d2bfecf7c67a9cb975fc"
   },
   {
     "url": "assets/js/18.65f9451b.js",
@@ -194,12 +194,12 @@ self.__precacheManifest = [
     "revision": "7696d8b22767c520025bfcacceb9223e"
   },
   {
-    "url": "assets/js/app.a75e603e.js",
-    "revision": "4a78393dff9bd1af3e560e929c55e46a"
+    "url": "assets/js/app.f2ff4f33.js",
+    "revision": "911ded7720e34683119120d3ac122fe7"
   },
   {
     "url": "index.html",
-    "revision": "0bf2427d45e590d68fe6b7b815a6f28b"
+    "revision": "5eaeccc8156b2793f22d8af1c2c74715"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
