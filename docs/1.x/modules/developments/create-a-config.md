@@ -56,7 +56,7 @@ In this file, we provide the name of the menu, route & its icon.
 | icon-class | Class for menu icon.                                |
 
 ### Menu Route Name Specified
-For the route, just add the named route which specified above i.e. `helloworld.adminhtml.index`:
+For the route, just add the named route which specified above i.e. `acme_helloworld.adminhtml.index`:
 ~~~php
 $router->get('/index', ['as'=>'index', 'uses' => 'IndexController@index']);
 ~~~
