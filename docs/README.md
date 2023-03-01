@@ -7,6 +7,7 @@ actionLink: /1.x/installation-guide/
 features:
 - title: Setup
   shortcuts:
+<<<<<<< Updated upstream
   - title: Overview
     link: /1.x/installation-guide/overview.html
   - title: System Requirements
@@ -31,5 +32,17 @@ features:
     link: #
   - title: Page Builder Developer Guide
     link: #
+=======
+    - shortcutText: Overview
+      shortcutLink: /1.x/installation-guide/overview.html
+    - shortcutText: System Requirements
+      shortcutLink: /1.x/installation-guide/requirements.html
+    - shortcutText: Installation Guide
+      shortcutLink: /1.x/installation-guide/installation.html
+- title: Custom theme
+  details: Learn how to create or customize a theme for Bantucms.
+- title: API documentation
+  details: Learn how to connect your existing systems with the Bantucms API.
+>>>>>>> Stashed changes
 footer: Copyright © 2023 Codenom
 ---
