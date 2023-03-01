@@ -1,7 +1,7 @@
 # Creating a Module
 There are two ways to create a module.
-1. [By using Module Generator](../basic-usage/creating-a-module.md#using-module-generator) **(Recommended)**
-2. [By manually setting up all files](../basic-usage/creating-a-module.md#using-module-manually) **(Expert Level)**
+1. [By using Module Generator](../developments/creating-a-module.md#using-module-generator) **(Recommended)**
+2. [By manually setting up all files](../developments/creating-a-module.md#using-module-manually) **(Expert Level)**
 
 ## Using Module Generator
 - Creating a module is simple and straightforward. Run the following command to create a module.
